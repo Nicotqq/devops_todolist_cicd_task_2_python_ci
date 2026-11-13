@@ -40,10 +40,13 @@ jobs:
     - name: Run tests
       run: |
         pytest
-      
-    - name: Coverage Report
+
+    - name: Generate Coverage 
       run: |
         coverage run -m pytest
+      
+    - name: Display Coverage Report
+      run: |
         coverage report
     
     - name: Lint with flake8
